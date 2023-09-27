@@ -21,9 +21,9 @@ const textOptions = ['CURRICULO', 'SOBRE MIM', 'PROJETOS', 'CONTATO']
 
 export default function OptionsHeader() {
     return (
-        <Options>
+        <Options key='1'>
             {textOptions.map((text) => (
-                <Option><p>{text}</p></Option>
+                <Option key={text}><p>{text}</p></Option>
             ))}
         </Options>
     )
