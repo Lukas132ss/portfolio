@@ -2,6 +2,12 @@ import styled from "styled-components";
 
 const Options = styled.ul`
     display: flex;
+    padding: 0;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        width: 100%;
+    }
 `;
 
 const Option = styled.li`
@@ -15,6 +21,11 @@ const Option = styled.li`
     padding: 0 5px;
     cursor: pointer;
     min-width: 120px;
+
+    @media (max-width: 600px) {
+        padding: 10px 0;
+        min-width: unset;
+    }
 `;
 
 const Link = styled.a`
@@ -25,6 +36,10 @@ const Link = styled.a`
     display: flex;
     width: 100%;
     height: 150%;
+
+    @media (max-width: 600px) {
+        height: 100%;
+    }
     
     &:hover {
         background-color: #30363d;
