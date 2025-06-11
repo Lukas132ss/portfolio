@@ -3,7 +3,7 @@ import OptionsHeader from "../OptionsHeader";
 import IconsHeader from "../IconsHeader";
 
 const HeaderContainer = styled.header`
-    background-color: #FFF;
+    background-color: #0d1117;
     display: flex;
     justify-content: center;
 `;
