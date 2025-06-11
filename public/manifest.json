@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Portfólio",
+  "name": "Portfólio do Lukas",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://avatars.githubusercontent.com/u/51383232?s=400&u=edd99b767e22ebef57ac67d16819472a208ed086&v=4",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
