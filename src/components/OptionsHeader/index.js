@@ -6,6 +6,7 @@ const Options = styled.ul`
 
 const Option = styled.li`
     font-size: 16px;
+    color: #c9d1d9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +27,7 @@ const Link = styled.a`
     height: 150%;
     
     &:hover {
-        background-color: #f0f0f0; /* Adapte a cor conforme necessário */
+        background-color: #30363d;
       }
 `;
 
