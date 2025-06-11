@@ -3,6 +3,12 @@ import styled from 'styled-components';
 const Section = styled.section`
   padding: 40px 20px;
   color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+
+  @media (max-width: 600px) {
+    padding: 20px 10px;
+  }
 `;
 
 const Title = styled.h2`

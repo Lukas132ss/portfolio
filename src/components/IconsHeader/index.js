@@ -6,6 +6,10 @@ const Icon = styled.li`
     margin-right: 40px;
     width: 25px;
     cursor: pointer;
+
+    @media (max-width: 600px) {
+        margin-right: 20px;
+    }
 `;
 
 const Icons = styled.ul`
@@ -17,6 +21,10 @@ const IconImg = styled.img`
     width: 250%;
     height: 100%;
     border-radius: 50%;
+
+    @media (max-width: 600px) {
+        width: 200%;
+    }
 `;
 
 const Link = styled.a`
