@@ -8,10 +8,10 @@ const HeaderContainer = styled.header`
     justify-content: center;
 `;
 
-export default function Header() {
+export default function Header({ onSelect }) {
     return (
         <HeaderContainer>
-            <OptionsHeader />
+            <OptionsHeader onSelect={onSelect} />
             <IconsHeader />
         </HeaderContainer>
     )
