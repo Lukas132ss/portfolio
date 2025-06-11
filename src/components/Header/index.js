@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import OptionsHeader from "../OptionsHeader";
-import IconsHeader from "../IconsHeader";
 import Logo from "../Logo";
 
 const HeaderContainer = styled.header`
@@ -19,9 +18,8 @@ const HeaderContainer = styled.header`
 export default function Header({ onSelect }) {
     return (
         <HeaderContainer>
-            <Logo />
+            <Logo onSelect={onSelect} />
             <OptionsHeader onSelect={onSelect} />
-            <IconsHeader onSelect={onSelect} />
         </HeaderContainer>
     )
 }
