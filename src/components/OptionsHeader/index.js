@@ -33,16 +33,19 @@ const Link = styled.a`
 
 const textOptions = ['CURRICULO', 'SOBRE MIM', 'PROJETOS', 'CONTATO']
 
-export default function OptionsHeader() {
+export default function OptionsHeader({ onSelect }) {
     return (
         <Options key='1'>
-            {textOptions.map((text) => (
-                <Option key={text}>
-                    <Link href={`#${text.toLowerCase().replace(/\s+/g, '-')}`}>
-                        <span>{text}</span>
-                    </Link>
-                </Option>
-            ))}
+            {textOptions.map((text) => {
+                const id = text.toLowerCase().replace(/\s+/g, '-');
+                return (
+                    <Option key={text}>
+                        <Link href={`#${id}`} onClick={(e) => { e.preventDefault(); onSelect(id); }}>
+                            <span>{text}</span>
+                        </Link>
+                    </Option>
+                )
+            })}
         </Options>
     )
 }
