@@ -38,7 +38,7 @@ export default function OptionsHeader() {
         <Options key='1'>
             {textOptions.map((text) => (
                 <Option key={text}>
-                    <Link href={`#${text.toLowerCase().trim()}`}>
+                    <Link href={`#${text.toLowerCase().replace(/\s+/g, '-')}`}>
                         <span>{text}</span>
                     </Link>
                 </Option>
@@ -46,3 +46,4 @@ export default function OptionsHeader() {
         </Options>
     )
 }
+
