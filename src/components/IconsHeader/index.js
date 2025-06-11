@@ -19,10 +19,19 @@ const IconImg = styled.img`
     border-radius: 50%;
 `;
 
-export default function IconsHeader() {
+const Link = styled.a`
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+`;
+export default function IconsHeader({ onSelect }) {
     return (
         <Icons>
-                <Icon><IconImg src={icon} alt=''></IconImg></Icon>
+            <Icon>
+                <Link href="#curriculo" onClick={(e) => { e.preventDefault(); onSelect && onSelect('curriculo'); }}>
+                    <IconImg src={icon} alt='' />
+                </Link>
+            </Icon>
         </Icons>
     )
 }
