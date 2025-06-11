@@ -3,7 +3,9 @@
 Repositório criado com ❤️
 
 ## 🚀 Tecnologias
-- (adicione aqui)
+- React
+- Styled Components
+- JavaScript
 
 ## 📄 Licença
 Este projeto está sob a licença MIT.
