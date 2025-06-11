@@ -12,7 +12,7 @@ export default function Header({ onSelect }) {
     return (
         <HeaderContainer>
             <OptionsHeader onSelect={onSelect} />
-            <IconsHeader />
+            <IconsHeader onSelect={onSelect} />
         </HeaderContainer>
     )
 }

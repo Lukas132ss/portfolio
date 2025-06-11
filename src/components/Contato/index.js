@@ -17,13 +17,26 @@ const Contact = styled.li`
   margin-bottom: 10px;
 `;
 
+const ContactLink = styled.a`
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 export default function Contato() {
   return (
     <Section id="contato">
       <Title>Contato</Title>
       <ContactList>
-        <Contact>Email: <a href="mailto:lk@serrante.com.br">lk@serrante.com.br</a></Contact>
-        <Contact>LinkedIn: <a href="https://www.linkedin.com/in/lukas-de-souza-santos-3a2423183">/in/lukas-de-souza-santos-3a2423183</a></Contact>
+        <Contact>
+          Email: <ContactLink href="mailto:lk@serrante.com.br">lk@serrante.com.br</ContactLink>
+        </Contact>
+        <Contact>
+          LinkedIn: <ContactLink href="https://www.linkedin.com/in/lukas-de-souza-santos-3a2423183">/in/lukas-de-souza-santos-3a2423183</ContactLink>
+        </Contact>
       </ContactList>
     </Section>
   );
